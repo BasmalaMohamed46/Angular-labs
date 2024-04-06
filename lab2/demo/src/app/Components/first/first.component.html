@@ -1,0 +1,6 @@
+<div class="card" style="width: 18rem;">
+<input type="text" name="myInput" id="myInput" placeholder="Enter Your Text" (input)="getData($event)" value="{{myText}}">
+<p>Your Text is: {{myText}}</p>
+
+<button (click)="reset()" class="btn btn-primary">Reset</button>
+</div>

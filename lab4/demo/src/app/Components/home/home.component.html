@@ -1,0 +1,26 @@
+<div class="form-container">
+    <form [formGroup]="regForm">
+      <div class="form-group">
+        <label for="exampleInputName1">Name</label>
+        <input formControlName="name" name="name" type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter Name">
+      </div>
+      @if(!NameValid){
+        <div class="alert alert-danger">Name is Invalid</div>
+      }
+      <div class="form-group mt-2">
+        <label for="exampleInputAge1">Age</label>
+        <input formControlName="age" name="age" type="text" class="form-control" id="exampleInputAge1" placeholder="Age">
+      </div>
+      @if(!AgeValid){
+        <div class="alert alert-danger">Age is Invalid</div>
+      }
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input  formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      @if(!EmailValid){
+        <div class="alert alert-danger">Email is Invalid</div>
+      }
+      <button (click)="getData()" class="btn btn-primary mt-2">Check</button>
+    </form>
+  </div>

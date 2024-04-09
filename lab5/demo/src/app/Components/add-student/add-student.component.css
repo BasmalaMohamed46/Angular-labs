@@ -1,0 +1,13 @@
+.btn-primary {
+    display: inline-block;
+    background-color: #e3f0e0; 
+    color: rgb(82, 82, 82); 
+    text-align: center;
+    text-decoration: none;
+    border-color: #e3f0e0;
+}
+
+.btn-primary:hover {
+    background-color: #c1e0b3;
+    border-color: #c1e0b3;
+}

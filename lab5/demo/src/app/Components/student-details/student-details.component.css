@@ -1,0 +1,22 @@
+.btn{
+    margin: 10px;
+}
+.btn a{
+    color: rgb(82, 82, 82);
+    text-decoration: none;
+}
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+.btn-primary {
+
+    background-color: #e3f0e0;
+    border-color: #e3f0e0;
+}
+.btn-primary:hover {
+    background-color: #c1e0b3;
+    border-color: #c1e0b3;
+}

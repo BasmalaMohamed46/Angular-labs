@@ -1,0 +1,23 @@
+
+i a{
+    text-decoration: none;
+
+}
+.plusBtn {
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #e3f0e0; 
+    color: rgb(82, 82, 82); 
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    border-color: #e3f0e0;
+}
+
+.plusBtn:hover {
+    background-color: #c1e0b3;
+    border-color: #c1e0b3;
+}

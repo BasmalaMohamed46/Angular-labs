@@ -1,0 +1,32 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="name" class="mb-2">Name</label>
+                <input #name id="name" type="text" class="form-control mb-3" placeholder="Enter a name">
+              </div>
+              <div class="form-group">
+                <label for="age" class="mb-2">Age</label>
+                <input #age id="age" type="number" class="form-control mb-3" placeholder="Enter an age">
+              </div>
+              <div class="form-group">
+                <label for="phone" class="mb-2">Phone</label>
+                <input #phone id="phone" type="text" class="form-control mb-3" placeholder="Enter a phone">
+              </div>
+              <div class="form-group">
+                <label for="email" class="mb-2">Email</label>
+                <input #email id="email" type="email" class="form-control mb-3" placeholder="Enter an email">
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary btn-block plusBtn" (click)="Add(name.value, age.value, phone.value, email.value)">ADD</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

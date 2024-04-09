@@ -1,0 +1,30 @@
+@if (student) {
+    <div class="container mt-4 center-content">
+        <div class="card" > 
+          <div class="card-header bg-secondary text-white">
+            <h5 class="mb-0">Student Information</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-9">
+                <p><strong>Name:</strong> {{student.name}}</p>
+                <p><strong>Age:</strong> {{student.age}}</p>
+                <p><strong>Email:</strong> {{student.email}}</p>
+                <p><strong>Phone:</strong> {{student.phone}}</p>
+              </div>
+              <div class="col-md-3 d-flex align-items-center justify-content-end">
+                <button class="btn btn-primary "><a  routerLink="/update/{{student.id}}">Update</a></button>
+                <button class="btn btn-danger " (click)="Delete()">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }@else {
+      <div class="container mt-4 center-content">
+        <div class="alert alert-danger" role="alert">
+          <h5 class="mb-0">Loading...</h5>
+        </div>
+      </div>
+  }
+  
